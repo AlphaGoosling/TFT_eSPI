@@ -132,6 +132,7 @@
 **                         Section 2: General Pin configuration
 ***************************************************************************************/
 // General pins
+/*
 #if CONFIG_TFT_CS == -1
     #error "Invalid Chip Select pin. Check TFT_eSPI configuration"
 #else
@@ -161,11 +162,12 @@
     #endif
 
     #define TFT_BACKLIGHT_ON CONFIG_TFT_BACKLIGHT_ON
+    */
 #endif
 
 
 /***************************************************************************************
-**                         Section 3: Data bus Pin configuration
+                          Section 3: Data bus Pin configuration
 ***************************************************************************************/
 
 // 8 BIT PARALLEL BUS
@@ -270,7 +272,7 @@
 /***************************************************************************************
 **                         Section 4: Setup Fonts
 ***************************************************************************************/
-
+/*
 #ifdef CONFIG_TFT_LOAD_GLCD
     #define LOAD_GLCD       // Font 1. Original Adafruit 8 pixel font needs ~1820 bytes in FLASH
 #endif
@@ -302,11 +304,11 @@
 #if CONFIG_TFT_SMOOTH_FONT
     #define SMOOTH_FONT
 #endif
-
+*/
 /***************************************************************************************
 **                         Section 5: Touchscreen configuration
 ***************************************************************************************/
-
+/*
 #ifdef CONFIG_ENABLE_TOUCH
     #if CONFIG_TOUCH_CS == -1
         #error "Invalid Touch Chip Select pin. Check TFT_eSPI configuration"
@@ -318,3 +320,4 @@
 #endif
 
 #endif // TFT_CONFIG_H
+*/
