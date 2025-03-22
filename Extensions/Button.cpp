@@ -38,7 +38,7 @@ void TFT_eSPI_Button::initButtonUL(
   _textcolor    = textcolor;
   _textsize     = textsize;
   _gfx          = gfx;
-  strncpy(_label, label, 9);
+  strncpy(_label, label, 20);
 }
 
 // Adjust text datum and x, y deltas
