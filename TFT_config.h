@@ -35,7 +35,7 @@
 **                         TFT_eSPI Configuration defines
 ***************************************************************************************/
 // Override defaults
-#define USER_SETUP_LOADED
+//#define USER_SETUP_LOADED
 
 /***************************************************************************************
 **                         Section 1: Load TFT driver
@@ -132,6 +132,7 @@
 **                         Section 2: General Pin configuration
 ***************************************************************************************/
 // General pins
+/*
 #if CONFIG_TFT_CS == -1
     #error "Invalid Chip Select pin. Check TFT_eSPI configuration"
 #else
@@ -151,7 +152,7 @@
 #else
     #define TFT_RST         CONFIG_TFT_RST
 #endif
-
+*/
 // Backlight config
 #ifdef CONFIG_ENABLE_BL
     #if CONFIG_TFT_BL == -1
@@ -238,7 +239,7 @@
     #if CONFIG_TFT_HSPI_PORT
         #define USE_HSPI_PORT
     #endif
-
+    /*
     #if CONFIG_TFT_MISO != -1
         #define TFT_MISO      CONFIG_TFT_MISO
     #endif
@@ -260,7 +261,7 @@
     #if CONFIG_TFT_SPI_READ_FREQ != -1
         #define SPI_READ_FREQUENCY CONFIG_TFT_SPI_READ_FREQ
     #endif
-    
+    */
     #ifdef CONFIG_TFT_SDA_READ
         #define TFT_SDA_READ
     #endif
@@ -306,7 +307,7 @@
 /***************************************************************************************
 **                         Section 5: Touchscreen configuration
 ***************************************************************************************/
-
+/*
 #ifdef CONFIG_ENABLE_TOUCH
     #if CONFIG_TOUCH_CS == -1
         #error "Invalid Touch Chip Select pin. Check TFT_eSPI configuration"
@@ -316,5 +317,5 @@
 
     #define SPI_TOUCH_FREQUENCY CONFIG_SPI_TOUCH_FREQUENCY
 #endif
-
+*/
 #endif // TFT_CONFIG_H
