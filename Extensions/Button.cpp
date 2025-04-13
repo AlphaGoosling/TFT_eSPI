@@ -97,6 +97,12 @@ bool TFT_eSPI_Button::contains(int16_t x, int16_t y) {
           (y >= _y1) && (y < (_y1 + _h)));
 }
 
+int32_t  TFT_eSPI_Button::topleftcorner(){ 
+  int32_t coordinates;
+  coordinates = _x1;
+  return((coordinates << 16) | _y1);
+}
+
 void TFT_eSPI_Button::press(bool p) {
   laststate = currstate;
   currstate = p;

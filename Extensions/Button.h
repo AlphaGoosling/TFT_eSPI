@@ -25,6 +25,8 @@ class TFT_eSPI_Button
   
   void     drawButton(bool inverted = false, String long_name = "");
   bool     contains(int16_t x, int16_t y);
+  int32_t  topleftcorner(); //returns the coordinates of the top left corner of the button, 
+                                // first 16 bits for the x coordinate and last 16 bits for the y coordinate
 
   void     press(bool p);
   bool     isPressed();
