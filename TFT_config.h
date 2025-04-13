@@ -152,7 +152,7 @@
 #else
     #define TFT_RST         CONFIG_TFT_RST
 #endif
-*/
+
 // Backlight config
 #ifdef CONFIG_ENABLE_BL
     #if CONFIG_TFT_BL == -1
@@ -163,7 +163,7 @@
 
     #define TFT_BACKLIGHT_ON CONFIG_TFT_BACKLIGHT_ON
 #endif
-
+*/
 
 /***************************************************************************************
 **                         Section 3: Data bus Pin configuration
