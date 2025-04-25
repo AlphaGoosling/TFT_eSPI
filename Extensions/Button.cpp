@@ -7,7 +7,7 @@ TFT_eSPI_Button::TFT_eSPI_Button(void) {
   _xd        = 0;
   _yd        = 0;
   _textdatum = MC_DATUM;
-  _label[21]  = '\0';
+  _label[20]  = '\0';
   currstate = false;
   laststate = false;
 }
@@ -38,7 +38,7 @@ void TFT_eSPI_Button::initButtonUL(
   _textcolor    = textcolor;
   _textsize     = textsize;
   _gfx          = gfx;
-  strncpy(_label, label, 21);
+  strncpy(_label, label, 20);
 }
 
 // Adjust text datum and x, y deltas
